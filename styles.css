@@ -1,0 +1,32 @@
+.modal[hidden] {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    z index:1000;
+}
+
+.modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+}
+
+.modal__window {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    border radius:12px;
+    padding: 1.25rem;
+    width: min(92vw,520px);
+}
+
+.form-actions {
+    display: flex;
+    gap: .5rem;
+    margin-top: 1rem;
+}

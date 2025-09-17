@@ -4,13 +4,16 @@
     <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная - TechoRicon</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
     <meta name="description" content="Магазин самой разнообразной техникой TechoRicon">
-    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets\techoricon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Шапка сайта -->
     <header>
         <a href="index.html">TechoRicon</a>
+        
         <!-- Главное меню навигации -->
         <nav>
             <ul>
@@ -23,6 +26,7 @@
     <!-- Уникальное основное содержимое страницы -->
     <main>
         <h1>Добро пожаловать на наш сайт!</h1>
+        <img src="assets\techoricon.webp" alt="Логотип TechoRicon" />
         <!-- Секция 1 с якорем -->
         <section id="services">
             <h2>Наши услуги</h2>
@@ -39,6 +43,41 @@
         <!-- Секция 3 с якорем -->
         <section id="contacts">
             <h2>Контактная информация</h2>
+            <!-- Кнопка открытия модалки -->
+            <button id="openDialog" type="button">Написать нам</button>
+            <!-- Модалка с формой -->
+            <dialog id="contactDialog" aria-labelledby="dialogTitle">
+                <h2 id="dialogTitle">Обратная связь</h2>
+                <form id="contactForm" method="dialog" novalidate>
+                    <label for="name">Имя</label>
+                    <input id="name" name="name" type="text" required minlength="2"
+                           autocomplete="given-name">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" required
+                           autocomplete="email">
+                    <label for="phone">Телефон</label>
+                    <input id="phone" name="phone" type="tel" inputmode="tel"
+                           autocomplete="tel"
+                           aria-describedby="phoneHelp" placeholder="+7 (900) 000-00-00"
+                           required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
+                    <small id="phoneHelp">Формат: +7 (900) 000-00-00</small>
+                    <label for="date">Дата</label>
+                    <input id="date" name="date" type="date">
+                    <label for="topic">Тема</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">Выберите тему</option>
+                        <option>Вопрос</option>
+                        <option>Заказ</option>
+                    </select>
+                    <label for="message">Сообщение</label>
+<textarea id="message" name="message" rows="4" required></textarea>
+                    <div class="form-actions">
+                        <button type="button" id="closeDialog">Закрыть</button>
+                        <button type="submit">Отправить</button>
+                    </div>
+                </form>
+            </dialog>
+
             <p>Телефон магазина: +7 (923) 456-58-91</p>
             <p>Электронная почта: TechoRiconOff@mail.ru</p>
             <a href="contacts.html">Подробнее</a> <!-- Ссылка на отдельную страницу -->
@@ -46,7 +85,7 @@
     </main>
     <!-- Подвал сайта -->
     <footer>
-        <p>&copy; 2025 Название вашего сайта. Все права защищены.</p>
+        <p>&copy; 2025 TechoRicon. Все права защищены.</p>
         <p>Телефон: +7 (923) 456-58-91</p>
     </footer>
 </body>
