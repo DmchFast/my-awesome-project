@@ -1,7 +1,7 @@
 ﻿// ЛОГИКА МОДАЛЬНОГО ОКНА
 const dlg = document.getElementById('contactDialog');
 const openBtn = document.getElementById('openDialog');
-const closeBtn = document.getElementById('closeDialog');
+const closeBtn = document.getElementById('closeButt');
 const form = document.getElementById('contactForm');
 let lastActive = null;
 
@@ -15,7 +15,7 @@ closeBtn.addEventListener('click', () => dlg.close('cancel'));
 
 form?.addEventListener('submit', (e) => {
     // валидация см. 1.4.2; при успехе закрываем окно 
-}); 
+});
 
 // Esc по умолчанию вызывает событие 'cancel' и закрывает <dialog>
 // Обработчик закрытия модалки для возврата фокуса.
@@ -34,15 +34,15 @@ phoneInput?.addEventListener('input', (e) => {
     const parts = []
     if (d.length > 0) parts.push('+7');
     if (d.length > 1) parts.push(' (' + d.slice(1, 4));
-    if (d.length >= 4) parts[parts.length - 1] += ')';
+    if (d.length > 4) parts[parts.length - 1] += ')';
     if (d.length >= 5) parts.push(' ' + d.slice(4, 7));
     if (d.length >= 8) parts.push('-' + d.slice(7, 9));
     if (d.length >= 10) parts.push('-' + d.slice(9, 11));
-    phone.value = parts.join('');
+    phoneInput.value = parts.join('');
 });
 
 // Строгая проверка (если задаёте pattern из JS):
-phone?.setAttribute('pattern', '^\\+7 \\(\\d{3}\\) \\d{3}-\\d{2}-\\d{2}$');
+phoneInput?.setAttribute('pattern', '^\\+7 \\(\\d{3}\\) \\d{3}-\\d{2}-\\d{2}$');
 
 // ВАЛИДАЦИЯ ФОРМЫ
 form?.addEventListener('submit', (e) => {
