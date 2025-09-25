@@ -1,92 +1,115 @@
-<!DOCTYPE html>
+п»ї<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UFT-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная - TechoRicon</title>
+    <title>Р“Р»Р°РІРЅР°СЏ - TechoRicon</title>
+    <link href="reset.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" defer></script>
-    <meta name="description" content="Магазин самой разнообразной техникой TechoRicon">
+    <meta name="description" content="РњР°РіР°Р·РёРЅ СЃР°РјРѕР№ СЂР°Р·РЅРѕРѕР±СЂР°Р·РЅРѕР№ С‚РµС…РЅРёРєРѕР№ TechoRicon TechoRicon">
     <link rel="icon" href="assets\techoricon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- Шапка сайта -->
-    <header>
-        <a href="index.html">TechoRicon</a>
-        
-        <!-- Главное меню навигации -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+    <!-- РЁР°РїРєР° СЃР°Р№С‚Р° -->
+    <header class="header" >
+        <div class="header__brand">
+            
+            <img class="header__logo" src="assets\techoricon.webp"
+                 alt="Р›РѕРіРѕС‚РёРї TechoRicon"
+                 loading="lazy"
+                 decoding="async" />
+            <a href="index.html" class="header__title">TechoRicon</a>
+        </div>
+        <!-- Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ РЅР°РІРёРіР°С†РёРё -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="index.html">Р“Р»Р°РІРЅР°СЏ</a></li>
+                <li><a class="nav__link" href="about.html">Рћ РЅР°СЃ</a></li>
+                <li><a class="nav__link" href="contacts.html">РљРѕРЅС‚Р°РєС‚С‹</a></li>
             </ul>
         </nav>
     </header>
-    <!-- Уникальное основное содержимое страницы -->
-    <main>
-        <h1>Добро пожаловать на наш сайт!</h1>
-        <img src="assets\techoricon.webp" alt="Логотип TechoRicon" />
-        <!-- Секция 1 с якорем -->
-        <section id="services">
-            <h2>Наши услуги</h2>
-            <p>На этом сайте вы можете посмотреть наш огромный ассортимент по электронной технике.</p>
-            <p>Вы найдёте телефоны, компьютеры, бытовую технику, технику для специальных задач и многое другое.</p>
-            <a href="#contacts">Связаться с нами</a> <!-- Якорная ссылка внутри страницы -->
+
+    <!-- РЈРЅРёРєР°Р»СЊРЅРѕРµ РѕСЃРЅРѕРІРЅРѕРµ СЃРѕРґРµСЂР¶РёРјРѕРµ СЃС‚СЂР°РЅРёС†С‹ -->
+    <main class="main">
+        <h1 class="main__title">Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РЅР° РЅР°С€ СЃР°Р№С‚!</h1>
+
+        <!-- РЎРµРєС†РёСЏ 1 СЃ СЏРєРѕСЂРµРј -->
+        <section class="section">
+            <h2 class="section__title">РќР°С€Рё СѓСЃР»СѓРіРё</h2>
+            <p>РќР° СЌС‚РѕРј СЃР°Р№С‚Рµ РІС‹ РјРѕР¶РµС‚Рµ РїРѕСЃРјРѕС‚СЂРµС‚СЊ РЅР°С€ РѕРіСЂРѕРјРЅС‹Р№ Р°СЃСЃРѕСЂС‚РёРјРµРЅС‚ РїРѕ СЌР»РµРєС‚СЂРѕРЅРЅРѕР№ С‚РµС…РЅРёРєРµ.</p>
+            <p>Р’С‹ РЅР°Р№РґС‘С‚Рµ С‚РµР»РµС„РѕРЅС‹, РєРѕРјРїСЊСЋС‚РµСЂС‹, Р±С‹С‚РѕРІСѓСЋ С‚РµС…РЅРёРєСѓ, С‚РµС…РЅРёРєСѓ РґР»СЏ СЃРїРµС†РёР°Р»СЊРЅС‹С… Р·Р°РґР°С‡ Рё РјРЅРѕРіРѕРµ РґСЂСѓРіРѕРµ.</p>
+            <a href="#contacts" class="section__link">РЎРІСЏР·Р°С‚СЊСЃСЏ СЃ РЅР°РјРё</a> <!-- РЇРєРѕСЂРЅР°СЏ СЃСЃС‹Р»РєР° РІРЅСѓС‚СЂРё СЃС‚СЂР°РЅРёС†С‹ -->
         </section>
-        <!-- Секция 2 с якорем -->
-        <section id="portfolio">
-            <h2>Портфолио товара</h2>
-            <p>Наш товар высокого качества, что доказали большое количество наших покупателей.</p>
-            <p>Магазин является официальным партнёром самых известных брендов таких как: Iphone, Samsung, Bork, Realme, Haier, OPPO и многие другие производители техники</p>
+
+        <!-- РЎРµРєС†РёСЏ 2 СЃ СЏРєРѕСЂРµРј -->
+        <section class="section">
+            <h2 class="section__title">РџРѕСЂС‚С„РѕР»РёРѕ С‚РѕРІР°СЂР°</h2>
+            <p>РќР°С€ С‚РѕРІР°СЂ РІС‹СЃРѕРєРѕРіРѕ РєР°С‡РµСЃС‚РІР°, С‡С‚Рѕ РґРѕРєР°Р·Р°Р»Рё Р±РѕР»СЊС€РѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РЅР°С€РёС… РїРѕРєСѓРїР°С‚РµР»РµР№.</p>
+            <p>РњР°РіР°Р·РёРЅ СЏРІР»СЏРµС‚СЃСЏ РѕС„РёС†РёР°Р»СЊРЅС‹Рј РїР°СЂС‚РЅС‘СЂРѕРј СЃР°РјС‹С… РёР·РІРµСЃС‚РЅС‹С… Р±СЂРµРЅРґРѕРІ С‚Р°РєРёС… РєР°Рє: Iphone, Samsung, Bork, Realme, Haier, OPPO Рё РјРЅРѕРіРёРµ РґСЂСѓРіРёРµ РїСЂРѕРёР·РІРѕРґРёС‚РµР»Рё С‚РµС…РЅРёРєРё</p>
         </section>
-        <!-- Секция 3 с якорем -->
-        <section id="contacts">
-            <h2>Контактная информация</h2>
-            <!-- Кнопка открытия модалки -->
-            <button id="openDialog" type="button">Написать нам</button>
-            <!-- Модалка с формой -->
-            <dialog id="contactDialog" aria-labelledby="dialogTitle">
-                <h2 id="dialogTitle">Обратная связь</h2>
-                <form id="contactForm" method="dialog" novalidate>
-                    <label for="name">Имя</label>
+
+        <!-- Р’РёРґРµРѕ СЃРµРєС†РёСЏ -->
+        <section class="section">
+            <h2 class="section__title">РќРѕРІРёРЅРєР° РЅР°С€РµРіРѕ РјР°РіР°Р·РёРЅР°</h2>
+            <div class="media">
+                <iframe class="media__iframe"
+                        src="https://www.youtube.com/embed/3i1OB6wKYms"
+                        title="Р’РёРґРµРѕ Рѕ РјР°РіР°Р·РёРЅРµ TechoRicon"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- РЎРµРєС†РёСЏ 3 СЃ СЏРєРѕСЂРµРј -->
+        <section class="section" id="contacts">
+            <h2 class="section__title">РљРѕРЅС‚Р°РєС‚РЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ</h2>
+            <!-- РљРЅРѕРїРєР° РѕС‚РєСЂС‹С‚РёСЏ РјРѕРґР°Р»РєРё -->
+            <button id="openDialog" type="button" class="button button--accent">РќР°РїРёСЃР°С‚СЊ РЅР°Рј</button>
+            <!-- РњРѕРґР°Р»РєР° СЃ С„РѕСЂРјРѕР№ -->
+            <dialog id="contactDialog" class="dialog" aria-labelledby="dialogTitle">
+                <h2 id="dialogTitle" class="dialog__title">РћР±СЂР°С‚РЅР°СЏ СЃРІСЏР·СЊ</h2>
+                <form id="contactForm" method="dialog" novalidate class="form">
+                    <label for="name" class="form__label">РРјСЏ</label>
                     <input id="name" name="name" type="text" required minlength="2"
-                           autocomplete="given-name">
-                    <label for="email">E-mail</label>
+                           autocomplete="given-name" class="form__input">
+                    <label for="email" class="form__label">E-mail</label>
                     <input id="email" name="email" type="email" required
-                           autocomplete="email">
-                    <label for="phone">Телефон</label>
+                           autocomplete="email" class="form__input">
+                    <label for="phone" class="form__label">РўРµР»РµС„РѕРЅ</label>
                     <input id="phone" name="phone" type="tel" inputmode="tel"
-                           autocomplete="tel"
+                           autocomplete="tel" class="form__input"
                            aria-describedby="phoneHelp" placeholder="+7 (900) 000-00-00"
                            required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
-                    <small id="phoneHelp">Формат: +7 (900) 000-00-00</small>
-                    <label for="date">Дата</label>
-                    <input id="date" name="date" type="date">
-                    <label for="topic">Тема</label>
-                    <select id="topic" name="topic" required>
-                        <option value="">Выберите тему</option>
-                        <option>Вопрос</option>
-                        <option>Заказ</option>
+                    <small id="phoneHelp" class="form__help">Р¤РѕСЂРјР°С‚: +7 (900) 000-00-00</small>
+                    <label for="date" class="form__label">Р”Р°С‚Р°</label>
+                    <input id="date" name="date" type="date" class="form__input">
+                    <label for="topic" class="form__label">РўРµРјР°</label>
+                    <select id="topic" name="topic" required class="form__select">
+                        <option value="">Р’С‹Р±РµСЂРёС‚Рµ С‚РµРјСѓ</option>
+                        <option>Р’РѕРїСЂРѕСЃ</option>
+                        <option>Р—Р°РєР°Р·</option>
                     </select>
-                    <label for="message">Сообщение</label>
-<textarea id="message" name="message" rows="4" required></textarea>
-                    <div class="form-actions">
-                        <button type="button" id="closeDialog">Закрыть</button>
-                        <button type="submit">Отправить</button>
+                    <label for="message" class="form__label">РЎРѕРѕР±С‰РµРЅРёРµ</label>
+                    <textarea id="message" name="message" rows="4" required class="form__textarea"></textarea>
+                    <div class="form__actions">
+                        <button type="button" id="closeButt" class="button button--secondary">Р—Р°РєСЂС‹С‚СЊ</button>
+                        <button type="submit" id="putButt" class="button button--accent">РћС‚РїСЂР°РІРёС‚СЊ</button>
                     </div>
                 </form>
             </dialog>
 
-            <p>Телефон магазина: +7 (923) 456-58-91</p>
-            <p>Электронная почта: TechoRiconOff@mail.ru</p>
-            <a href="contacts.html">Подробнее</a> <!-- Ссылка на отдельную страницу -->
+            <p>РўРµР»РµС„РѕРЅ РјР°РіР°Р·РёРЅР°: +7 (923) 456-58-91</p>
+            <p>Р­Р»РµРєС‚СЂРѕРЅРЅР°СЏ РїРѕС‡С‚Р°: TechoRiconOff@mail.ru</p>
+            <a href="contacts.html" class="section__link">РџРѕРґСЂРѕР±РЅРµРµ</a> <!-- РЎСЃС‹Р»РєР° РЅР° РѕС‚РґРµР»СЊРЅСѓСЋ СЃС‚СЂР°РЅРёС†Сѓ -->
         </section>
     </main>
-    <!-- Подвал сайта -->
-    <footer>
-        <p>&copy; 2025 TechoRicon. Все права защищены.</p>
-        <p>Телефон: +7 (923) 456-58-91</p>
+    <!-- РџРѕРґРІР°Р» СЃР°Р№С‚Р° -->
+    <footer class="footer">
+        <p>&copy; 2025 TechoRicon. Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.</p>
+        <p>РўРµР»РµС„РѕРЅ: +7 (923) 456-58-91</p>
     </footer>
 </body>
 </html>

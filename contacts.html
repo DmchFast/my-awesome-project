@@ -4,43 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты - TechoRicon</title>
+    <link href="reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
     <meta name="description" content="Контакты магазина техники TechoRicon">
-    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets\techoricon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <a href="index.html">TechoRicon</a>
+    <header class="header">
+        <div class="header__brand">
+            <img class="header__logo" src="assets\techoricon.webp" alt="Логотип TechoRicon" />
+            <a href="index.html" class="header__title">TechoRicon</a>
+        </div>
         <!-- Главное меню навигации -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="index.html">Главная</a></li>
+                <li><a class="nav__link" href="about.html">О нас</a></li>
+                <li><a class="nav__link" href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <!-- Простые "хлебные крошки" -->
-        <nav aria-label="Хлебные крошки">
-            <a href="index.html">Главная</a> →
-            <span>Контакты</span>
+        <nav aria-label="Хлебные крошки" class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs__link">Главная</a> →
+            <span class="breadcrumbs__current">Контакты</span>
         </nav>
-        <h1>Наши контакты</h1>
-        <section>
+        <h1 class="main__title">Наши контакты</h1>
+        <section class="section">
             <p>Телефон магазина: +7 (923) 456-58-91</p>
             <p>Телефон техподдежки: +7 (925) 934-83-21</p>
             <p>Электронная почта: TechoRiconOff@mail.ru</p>
             <p>Электронная почта техподдежки: TechoRiconTechHelp@mail.ru</p>
-            <h2>Телефон горячей линии по статусу заказа</h2>
+            <h2 class="section__title">Телефон горячей линии по статусу заказа</h2>
             <p>Звонок бесплатный по всей территории Российской Федерации</p>
             <p>+7 (922) 456-88-10</p>
         </section>
-        <section>
-            <h2>Адрес магазина и офиса</h2>
+        <section class="section">
+            <h2 class="section__title">Адрес магазина и офиса</h2>
             <p>г. Москва, ул. Примерная, д. 1</p>
             <p>г. Москва, ул. Приморная, д. 23</p>
+        </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 TechoRicon. Все права защищены.</p>
         <p>Телефон: +7 (923) 456-58-91</p>
     </footer>
