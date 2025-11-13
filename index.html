@@ -16,9 +16,9 @@
         <div class="header__brand">
             
             <img class="header__logo" src="assets\techoricon.webp"
-                 alt="Логотип TechoRicon"
-                 loading="lazy"
-                 decoding="async" />
+                alt="Логотип TechoRicon"
+                loading="lazy"
+                decoding="async" />
             <a href="index.html" class="header__title">TechoRicon</a>
         </div>
         <!-- Главное меню навигации -->
@@ -34,35 +34,35 @@
     <!-- Уникальное основное содержимое страницы -->
     <main class="main">
         <h1 class="main__title">Добро пожаловать на наш сайт!</h1>
+		<div class="grid">
+			<!-- Секция 1 с якорем -->
+			<section class="section">
+				<h2 class="section__title">Наши услуги</h2>
+				<p>На этом сайте вы можете посмотреть наш огромный ассортимент по электронной технике.</p>
+				<p>Вы найдёте телефоны, компьютеры, бытовую технику, технику для специальных задач и многое другое.</p>
+				<a href="#contacts" class="section__link">Связаться с нами</a> <!-- Якорная ссылка внутри страницы -->
+			</section>
 
-        <!-- Секция 1 с якорем -->
-        <section class="section">
-            <h2 class="section__title">Наши услуги</h2>
-            <p>На этом сайте вы можете посмотреть наш огромный ассортимент по электронной технике.</p>
-            <p>Вы найдёте телефоны, компьютеры, бытовую технику, технику для специальных задач и многое другое.</p>
-            <a href="#contacts" class="section__link">Связаться с нами</a> <!-- Якорная ссылка внутри страницы -->
-        </section>
+			<!-- Секция 2 с якорем -->
+			<section class="section">
+				<h2 class="section__title">Портфолио товара</h2>
+				<p>Наш товар высокого качества, что доказали большое количество наших покупателей.</p>
+				<p>Магазин является официальным партнёром самых известных брендов таких как: Iphone, Samsung, Bork, Realme, Haier, OPPO и многие другие производители техники</p>
+			</section>
 
-        <!-- Секция 2 с якорем -->
-        <section class="section">
-            <h2 class="section__title">Портфолио товара</h2>
-            <p>Наш товар высокого качества, что доказали большое количество наших покупателей.</p>
-            <p>Магазин является официальным партнёром самых известных брендов таких как: Iphone, Samsung, Bork, Realme, Haier, OPPO и многие другие производители техники</p>
-        </section>
-
-        <!-- Видео секция -->
-        <section class="section">
-            <h2 class="section__title">Новинка нашего магазина</h2>
-            <div class="media">
-                <iframe class="media__iframe"
-                        src="https://www.youtube.com/embed/3i1OB6wKYms"
-                        title="Видео о магазине TechoRicon"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                </iframe>
-            </div>
-        </section>
-
+			<!-- Видео секция -->
+			<section class="section">
+				<h2 class="section__title">Новинка нашего магазина</h2>
+				<div class="media">
+					<iframe class="media__iframe"
+							src="https://www.youtube.com/embed/3i1OB6wKYms"
+							title="Видео о магазине TechoRicon"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+					</iframe>
+				</div>
+			</section>
+		
         <!-- Секция 3 с якорем -->
         <section class="section" id="contacts">
             <h2 class="section__title">Контактная информация</h2>
@@ -74,15 +74,15 @@
                 <form id="contactForm" method="dialog" novalidate class="form">
                     <label for="name" class="form__label">Имя</label>
                     <input id="name" name="name" type="text" required minlength="2"
-                           autocomplete="given-name" class="form__input">
+                        autocomplete="given-name" class="form__input">
                     <label for="email" class="form__label">E-mail</label>
                     <input id="email" name="email" type="email" required
-                           autocomplete="email" class="form__input">
+                        autocomplete="email" class="form__input">
                     <label for="phone" class="form__label">Телефон</label>
                     <input id="phone" name="phone" type="tel" inputmode="tel"
-                           autocomplete="tel" class="form__input"
-                           aria-describedby="phoneHelp" placeholder="+7 (900) 000-00-00"
-                           required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
+                        autocomplete="tel" class="form__input"
+                        aria-describedby="phoneHelp" placeholder="+7 (900) 000-00-00"
+                        required pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$">
                     <small id="phoneHelp" class="form__help">Формат: +7 (900) 000-00-00</small>
                     <label for="date" class="form__label">Дата</label>
                     <input id="date" name="date" type="date" class="form__input">
@@ -105,6 +105,7 @@
             <p>Электронная почта: TechoRiconOff@mail.ru</p>
             <a href="contacts.html" class="section__link">Подробнее</a> <!-- Ссылка на отдельную страницу -->
         </section>
+	</div>
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">

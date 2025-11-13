@@ -108,11 +108,6 @@ body {
 /* BREADCRUMBS */
 .breadcrumbs {
     margin-bottom: var(--space-4);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: var(--space-1);
 }
 
 .breadcrumbs__link {
@@ -310,126 +305,6 @@ body {
     text-align: center;
 }
 
-/* Стили для секции команды */
-
-/* Основное изображение команды */
-.team-main {
-    text-align: center;
-    margin-bottom: var(--space-5);
-}
-
-.team-description {
-    max-width: 800px;
-    margin: var(--space-3) auto;
-    font-size: 1.1rem;
-    line-height: 1.7;
-}
-
-/* Grid */
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-4);
-    margin: var(--space-5) 0;
-}
-
-.team-member {
-    background: var(--color-light);
-    border-radius: var(--border-radius);
-    padding: var(--space-3);
-    text-align: center;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-}
-
-.team-member:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-.team-member img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto var(--space-2);
-    border: 4px solid var(--color-primary);
-}
-
-.team-member h3 {
-    color: var(--color-primary);
-    margin-bottom: var(--space-1);
-    font-size: 1.3rem;
-}
-
-.team-member p {
-    margin-bottom: var(--space-1);
-    color: var(--color-dark);
-}
-
-/* Flex для специалистов */
-.team-specialists {
-    margin-top: var(--space-5);
-}
-
-.specialists-title {
-    text-align: center;
-    color: var(--color-primary);
-    margin-bottom: var(--space-4);
-    font-size: 1.5rem;
-}
-
-.specialists-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-4);
-}
-
-.specialist-card {
-    display: flex;
-    align-items: center;
-    background: var(--color-light);
-    border-radius: var(--border-radius);
-    padding: var(--space-3);
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-    max-width: 400px;
-    flex: 1 1 300px;
-}
-
-.specialist-card:hover {
-    transform: translateX(5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-.specialist-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: var(--space-3);
-    border: 3px solid var(--color-accent);
-}
-
-.specialist-info h4 {
-    color: var(--color-primary);
-    margin-bottom: var(--space-1);
-    font-size: 1.1rem;
-}
-
-.specialist-info p {
-    color: var(--color-dark);
-    margin-bottom: var(--space-1);
-    font-weight: 600;
-}
-
-.specialist-info span {
-    color: var(--color-fg);
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-
 /* Адаптивность */
 
 /* 1024px и меньше */
@@ -459,13 +334,13 @@ body {
 /* 750px и меньше */
 @media (max-width: 750px) {
     .header {
-        flex-direction: row;
+        flex-direction:row;
         gap: var(--space-3);
         padding: var(--space-3);
     }
     
     .header__brand {
-        flex-direction: row;
+        flex-direction:row;
         text-align: left;
     }
     
@@ -475,7 +350,7 @@ body {
     
     .nav__list {
         flex-wrap: wrap;
-        justify-content: flex-end;
+        justify-content:flex-end;
         gap: var(--space-2);
     }
     
@@ -513,23 +388,6 @@ body {
     .button {
         width: 100%;
     }
-    
-    /* Адаптивность для секции команды */
-    .team-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: var(--space-3);
-    }
-    
-    .specialist-card {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-    
-    .specialist-card img {
-        width: 60px;
-        height: 60px;
-        margin-right: var(--space-2);
-    }
 }
 
 /* 450px и меньше */
@@ -539,18 +397,18 @@ body {
     }
     
     .header {
-        flex-direction: column;
-        justify-content: center;
+		flex-direction: column;
+		justify-content: center;
         padding: var(--space-2);
-        gap: var(--space-2);
+
     }
     
-    .header__brand {
+	.header__brand {
         flex-direction: row;
         text-align: center;
         justify-content: center;
     }
-    
+
     .header__title {
         font-size: 1.5rem;
     }
@@ -559,38 +417,20 @@ body {
         width: 40px;
         height: 40px;
     }
-    
+
     .nav__list {
         flex-direction: row;
         align-items: center;
         width: 100%;
-        justify-content: center;
-        gap: var(--space-1);
+		justify-content: center;
     }
     
     .nav__link {
-        width: auto;
+        width: 100%;
         justify-content: center;
         text-align: center;
-        font-size: 0.8rem;
+		font-size: 0.8rem;
         padding: var(--space-1) var(--space-2);
-    }
-    
-    /* Центрирование хлебных крошек */
-    .breadcrumbs {
-        justify-content: center;
-        text-align: center;
-        margin-bottom: var(--space-3);
-    }
-    
-    .breadcrumbs__link {
-        padding: var(--space-1) var(--space-2);
-        font-size: 0.9rem;
-    }
-    
-    .breadcrumbs__current {
-        margin-left: 0;
-        font-size: 0.9rem;
     }
     
     .main__title {
@@ -608,6 +448,23 @@ body {
         margin-bottom: var(--space-2);
     }
     
+    .breadcrumbs {
+		justify-content: center;
+        text-align: center;
+		margin-bottom:  var(--space-4)-30%;
+        font-size: 0.9rem;
+    }
+    
+    .breadcrumbs__link {
+        padding: var(--space-1) var(--space-2);
+		font-size: 0.9rem;
+    }
+    
+	.breadcrumbs__current {
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
+	
     .footer {
         margin: var(--space-2) var(--space-1);
         font-size: 0.9rem;
@@ -626,36 +483,6 @@ body {
     
     .team-image {
         margin: var(--space-2) auto;
-    }
-    
-    /* Адаптивность для секции команды */
-    .team-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-2);
-    }
-    
-    .team-member {
-        padding: var(--space-2);
-    }
-    
-    .team-member img {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .specialists-flex {
-        gap: var(--space-2);
-    }
-    
-    .specialist-card {
-        flex-direction: column;
-        text-align: center;
-        padding: var(--space-2);
-    }
-    
-    .specialist-card img {
-        margin-right: 0;
-        margin-bottom: var(--space-2);
     }
 }
 
@@ -681,32 +508,7 @@ body {
     .breadcrumbs {
         font-size: 0.8rem;
     }
-    
-    .breadcrumbs__link {
-        padding: var(--space-1);
-        font-size: 0.8rem;
-    }
 }
-
-/* Ландшафтная ориентация на мобильных */
-/* @media (max-height: 500px) and (orientation: landscape) {
-    .header {
-        padding: var(--space-2);
-    }
-    
-    .header__brand {
-        flex-direction: row;
-    }
-    
-    .nav__list {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
-    .main {
-        padding: var(--space-2);
-    }
-} */
 
 /* Подсветка целевого якоря */
 /*.section:target {
